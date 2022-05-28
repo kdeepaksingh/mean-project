@@ -1,0 +1,40 @@
+<div class="w-100 card-section d-flex">
+    <div class="w-50">
+        <mat-card style="min-height: 36vh;">
+            <div class="w-100">
+                <img src="assets/images/login.jpg" class="card-image" alt="Girl Images" />
+            </div>
+        </mat-card>
+    </div>
+    <div class="w-50" style="background: beige;">
+        <mat-card style="min-height: 36vh;">
+            <div class="w-100">
+                <h2 class="heading-section" style="text-align:center;">Restaurent Login Here</h2>
+                <img src="assets/images/deepak.jpg" class="imgLoginStyle" alt="User logo">
+                <form [formGroup]="loginForm">
+                    <div class="form-group">
+                        <input type="email" class="form-control cust-input-box" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter User Email Id">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small> -->
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control cust-input-box" id="exampleInputPassword1"
+                            placeholder="Enter Password">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your password with anyone
+                            else.</small> -->
+                    </div>
+                    <p class="font-small white-text d-flex justify-content-end">
+                        <a class="login_Anchor">Don't Have? <span class="login_signup" routerLink="/sign-up">Click SignUp</span></a>
+                    </p>
+                    <div class="form-group">
+                        <button class="btn_style ml-4" style="width:230px;" type="button"
+                            matTooltip="Click Here To Login" (click)="postLoginForm()">Login</button>
+                        <button class="btn_style ml-4" style="width:230px;" type="button"
+                            matTooltip="Click Here To Reset" (click)="resetLoginForm()">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </mat-card>
+    </div>
+</div>

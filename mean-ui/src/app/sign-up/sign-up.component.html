@@ -1,0 +1,69 @@
+<div class="w-100" style="background: beige;">
+    <mat-card style="min-height: 36vh;">
+        <div class="w-100">
+            <h2 class="heading-section" style="text-align:center;">Restaurent Registration Here</h2>
+            <form [formGroup]="signupForm">
+                <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control cust-input-box" id="firstName"
+                                aria-describedby="emailHelp" placeholder="Enter User First Name"
+                                 (keypress)="allowOnlyAlphabets($event)" formControlName="firstName">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control cust-input-box" id="lastName"
+                                (keypress)="allowOnlyAlphabets($event)" formControlName="lastName"
+                                [(ngModel)]="lastName"   placeholder="Enter User Last Name">
+                            <span id="lastnameerror" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control cust-input-box" id="email" formControlName="email"
+                            [(ngModel)]="email"    (onkeyup)="validateEmail($event)" placeholder="Enter User Email">
+                            <span id="emailerror" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control cust-input-box" id="mobileNo"
+                                formControlName="mobileNo" placeholder="Enter Mobile No"
+                                [(ngModel)]="mobileNo"    (keypress)="allowedOnlyNo($event)">
+                            <span id="mobilenoerror" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control cust-input-box" id="address"
+                            [(ngModel)]="address"      formControlName="address" placeholder="Enter User Address"
+                                (keypress)="allowNumbersAndAlphabets($event)">
+                            <span id="addresserror" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control cust-input-box" id="password"
+                            [(ngModel)]="password"     formControlName="password" placeholder="Enter User Password"
+                                (keypress)="allowNumbersAndAlphabets($event)">
+                            <span id="passworderror" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control cust-input-box" id="cpassword"
+                            [(ngModel)]="cpassword"       formControlName="cpassword" placeholder="Enter Confirm Password"
+                                (keypress)="allowNumbersAndAlphabets($event)">
+                            <span id="cpassworderror" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <p class="font-small white-text d-flex justify-content-end">
+                            <a class="login_Anchor">Already Have Acc? <span class="login_signup"
+                                    routerLink="/login">Click Sign-In</span></a>
+                        </p>
+                        <div class="form-group">
+                            <button class="btn_style ml-4" style="width:230px;" type="button"
+                                matTooltip="Click Here To Sign-Up" (click)="postSignupForm()">Sign Up</button>
+                            <button class="btn_style ml-4" style="width:230px;" type="button"
+                                matTooltip="Click Here To Reset" (click)="resetSignUpForm()">Reset</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,155 @@
+<div class="about_us_form_style">
+    <div class="">
+        <h1 class="about_us_header">ABOUT ME</h1>
+    </div>
+    <form>
+        <div class="row">
+            <div class="col-4">
+                <img src="assets/images/deepak.jpg" alt="Deepak Profile" class="about_img" />
+            </div>
+            <div class="col-4">
+                <div class="profile_head">
+                    <h5>Deepak Singh</h5>
+                    <h6>MERN Stack Developer</h6>
+                    <p class="mt-3">Ratings :<small>1/10</small></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="main_header1">
+                    <h5>Deepak Singh</h5>
+                </div>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn_style global_background" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-edit"></i>Edit Profile</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <div class="popup-title-bg mt-2" style="width:400px;margin-left:10px;margin-bottom: 30px;">
+                    <label class="label-font">Social Links</label>
+                </div>
+                <div class="centerdiv">
+                    <a href="https://www.facebook.com/singh.deepak.9216" target="_blank">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="deepak.rajput1997" target="_blank">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/depak-singh-o4ab500169" target="_blank">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/depak-singh-o4ab500169" target="_blank">
+                        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/singh.deepak.9216" target="_blank">
+                        <i class="fa fa-gitlab fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/depak-singh-o4ab500169" target="_blank">
+                        <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="popup-title-bg mt-2" style="width: 200px;">
+                    <label class="label-font">About Profile</label>
+                </div>
+                <div class="">
+                    <div class="d-flex profile_content">
+                        <label>User ID :</label>
+                        <p>USER789654</p>
+                    </div>
+                    <div class="d-flex profile_content">
+                        <label>Name :</label>
+                        <p>Deepak Singh</p>
+                    </div>
+                    <div class="d-flex profile_content">
+                        <label>Email :</label>
+                        <p>deepuji8255@gmail.com</p>
+                    </div>
+                    <div class="d-flex profile_content">
+                        <label>Phone :</label>
+                        <p>8290886498</p>
+                    </div>
+                    <div class="d-flex profile_content">
+                        <label>Profession :</label>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="popup-title-bg mt-2" style="width: 200px;">
+                    <label class="label-font">Timeline</label>
+                </div>
+                <div class="">
+                    <div class="d-flex profile_content">
+                        <label>Experience :</label>
+                        <p>Expert</p>
+                    </div>
+                    <div class="d-flex profile_content">
+                        <label>Hourly Rate :</label>
+                        <p>10$/hr</p>
+                    </div>
+                    <div class="d-flex profile_content">
+                        <label>Total Project :</label>
+                        <p>50</p>
+                    </div>
+                    <div class="d-flex profile_content">
+                        <label>English Level :</label>
+                        <p>Expert</p>
+                    </div>
+                    <div class="d-flex profile_content">
+                        <label>Availability :</label>
+                        <p>6 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header model_heading_section">
+                <h5 class="modal-title model_heading_style" id="exampleModalLabel">Edit Profile Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <b aria-hidden="true " class="model_icon">&times;</b>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="input-box">
+                        <span><i class="fa fa-book"></i></span>
+                        <input type="text" placeholder="Enter First Name" required formControlName="firstName">
+                    </div>
+                    <div class="input-box">
+                        <span><i class="fa fa-book"></i></span>
+                        <input type="text" placeholder="Enter Last Name" required formControlName="lastName">
+                    </div>
+                    <div class="input-box">
+                        <span><i class="fa fa-book"></i></span>
+                        <input type="text" placeholder="Enter Student Email" required formControlName="email">
+                    </div>
+                    <div class="input-box">
+                        <span><i class="fa fa-book"></i></span>
+                        <input type="text" placeholder="Enter Mobile No" required formControlName="mobileNo">
+                    </div>
+                    <div class="input-box">
+                        <span><i class="fa fa-book"></i></span>
+                        <input type="text" placeholder="Enter Student Fee" required formControlName="fees">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer ">
+                <button type="button" class="myPatBtn5 ml-1 global_background" data-dismiss="modal">Close</button>
+                <button type="button" class="myPatBtn5 ml-1 global_background">Add +</button>
+                <button type="button" class="myPatBtn5 ml-1 global_background">Update</button>
+            </div>
+        </div>
+    </div>
+</div>

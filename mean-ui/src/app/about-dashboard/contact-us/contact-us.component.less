@@ -1,0 +1,217 @@
+.contact-us-bg {
+    background-image   : url('https://image.shutterstock.com/image-illustration/hanging-contact-us-symbols-front-260nw-1037046826.jpg');
+    background-position: center;
+    background-size    : cover;
+    width              : 100%;
+    height             : 100%;
+    margin-top         : 1px;
+    border-radius      : 10px;
+}
+
+.contact-Us-Header {
+    font-family            : sans-serif;
+    text-align             : center;
+    // margin-top             : 15px;
+    font-size              : 40px;
+    font-weight            : 800;
+    color                  : transparent;
+    background-image       : url(https://media.giphy.com/media/armpKTcxYqWjK/giphy.gif);
+    background-position    : center;
+    -webkit-background-clip: text;
+}
+
+.form_style {
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 10px    ;
+    background: transparent;
+    height: 438px;
+}
+
+.input-box {
+    margin    : 15px auto;
+    width     : 80%;
+    position  : relative;
+    box-shadow: 0 3px 4px -5px #000000;
+
+}
+
+.message-box {
+    margin    : 15px auto;
+    width     : 80%;
+    position  : relative;
+    box-shadow: 0 3px 4px -5px #000000;
+}
+
+.message-box textarea {
+    width        : 100%;
+    height       : 120px;
+    border       : none;
+    background   : #253144;
+    padding-left : 50px;
+    border-radius: 20px;
+    outline      : none;
+    color        : #fff !important;
+}
+
+.input-box input {
+    width        : 100%;
+    height       : 40px;
+    border       : none;
+    background   : #253144;
+    padding-left : 50px;
+    border-radius: 20px;
+    outline      : none;
+    color        : #fff !important;
+}
+
+.textareaspan {
+    position: absolute;
+}
+
+.textareaspan .fa {
+    padding: 10px;
+    color  : #fff;
+}
+
+span {
+    position     : absolute;
+    left         : 0;
+    top          : 0;
+    height       : 40px;
+    width        : 40px;
+    border-radius: 6px 0px 0px 6px;
+    background   : linear-gradient(to right, #980917, #1b4c6f);
+}
+
+span .fa {
+    padding: 10px;
+    color  : #fff;
+}
+
+button {
+    width        : 130px;
+    height       : 40px;
+    margin-left  : 10%;
+    display      : block;
+    color        : #fff;
+    border       : 0;
+    font-size    : 16px;
+    outline      : none;
+    border-radius: 25px 5px 25px 5px;
+    background   : linear-gradient(to right, #980917, #1b4c6f);
+    box-shadow   : 0 8px 10px -10px rgb(0, 0, 0);
+    cursor       : pointer;
+}
+
+button .fa {
+    margin-right: 10px;
+}
+
+::placeholder {
+    color: white !important;
+}
+
+// social icon style
+
+.centerdiv {
+    // height: 100vh;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+}
+
+a {
+    height          : 80px;
+    width           : 80px;
+    background-color: #f5f6fa;
+    margin          : 6px;
+    text-align      : center;
+    border-radius   : 50%;
+    line-height     : 110px;
+    position        : relative;
+    overflow        : hidden;
+}
+
+.fa-instagram {
+    color: #e84393 !important;
+}
+
+.fa-facebook {
+    color: blue !important;
+}
+
+.fa-twitter {
+    color: #0097e6 !important;
+}
+
+.fa-linkedin {
+    color: #0097e6 !important;
+}
+
+.fa-gitlab {
+    color: #e84393 !important;
+}
+
+.fa-youtube {
+    color: #e84118 !important;
+}
+
+a i {
+    transition: all 0.3s linear;
+}
+
+a:hover .fa {
+    transform: scale(1.5);
+    color    : #f5f6fa !important;
+}
+
+a:before {
+    // content         : "";
+    // width           : 120%;
+    // height          : 120%;
+    // position        : absolute;
+    // top             : 90%;
+    // left            : -50%;
+    // // background-color: #e84393;
+    // background   : linear-gradient(to right, #980917, #1b4c6f);
+    // transform       : rotate(60deg);
+    content   : "";
+    width     : 115%;
+    height    : 115%;
+    position  : absolute;
+    top       : 87%;
+    left      : -50%;
+    background: linear-gradient(to right, #980917, #1b4c6f);
+    transform : rotate(60deg);
+}
+
+a:hover::before {
+    animation          : socialicon 0.8s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes socialicon {
+    0% {
+        top : 90%;
+        left: -50%;
+    }
+
+    50% {
+        top : -60%;
+        left: -10%;
+    }
+
+    100% {
+        top : -10%;
+        left: -10%;
+    }
+}
+
+// @media (max-width:700px) {
+//     .col-md-6 {
+//         flex : 0 0 auto;
+//         width: 50%;
+//     }
+// }
